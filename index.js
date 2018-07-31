@@ -81,7 +81,7 @@ $('.musicBox .list').onclick = function(e){
 
 function getMusicList(callback){
     var xhr = new XMLHttpRequest()
-    xhr.open('GET','/music.json',true)  // 这样写，请求的时候域名是与网页保持一致
+    xhr.open('GET','music.json',true)  // 这样写，请求的时候域名是与网页保持一致
     xhr.onload = function() {
         if((xhr.status >= 200 && xhr.status <= 300) || xhr.status === 304){
             // console.log(JSON.parse(xhr.responseText))
